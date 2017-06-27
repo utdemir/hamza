@@ -1,0 +1,41 @@
+name:           hamza
+version:        0.0.1
+category:       Web
+homepage:       https://github.com/utdemir/hamza
+author:         Utku Demir
+maintainer:     me@utdemir.com
+copyright:      BSD3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+executable hamza
+  default-language: Haskell2010
+  hs-source-dirs: src/
+  ghc-options: -threaded -with-rtsopts=-T
+  main-is: Main.hs
+  build-depends:
+                base >= 4.7 && < 5
+              , haskakafka
+              , pipes
+              , containers
+              , text
+              , bytestring
+              , lens
+              , chan-split
+              , transformers
+              , unagi-chan
+              , async
+              , these
+              , cereal
+              , ekg
+              , ekg-core
+              , profunctors
+              , time
+              , hashable
+              , vector
+              , random
+              , psqueues
+              , concurrent-extra
+              , refined
